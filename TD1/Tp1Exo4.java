@@ -9,6 +9,7 @@ class Tp1Exo4 {
         System.out.println(o);
     }
 
+    //#####################################
     public static boolean estPalindrome(String mot) {
         boolean test = true;
         int len = mot.length();
@@ -18,6 +19,7 @@ class Tp1Exo4 {
         }
         return test;
     }
+    //####################################
 
     public static void main(String[] args) {
         // Exercice 4
