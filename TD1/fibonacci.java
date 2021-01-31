@@ -23,5 +23,6 @@ class Fibonacci
         int i = Fibo(Integer.parseInt(args[0]));
         print(i);
         return;
+        
     }
 }
