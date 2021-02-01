@@ -1,5 +1,42 @@
 class Tableau {
 
+
+  public static int[] Sort(int[] array, int begin, int end)
+  {
+    if(begin >= end || end <= begin) return array;
+
+    int [] aux =  array.clone();
+
+    int point = begin;
+    for (int i = begin; i <= end -1; i++)
+    {
+      if(aux[end] > aux[i])
+      {
+        array[point] = aux[i];
+        point++;
+      }
+    }
+
+    int pivot = point;
+    array[point] = aux[end];
+    point++;
+
+    for(int i = begin; i <= end -1; i++)
+    {
+      if(aux[end] <= aux[i])
+      {
+        array[point] = aux[i];
+        point++;
+      }
+    }
+
+    array = Sort(array, begin, pivot-1);
+    array = Sort(array, pivot+1, end);  
+    
+    return array;
+  }
+
+
   public static void main(String[] args) {
       /**
       Les diverses manieres de déclaration d'un tableau.
@@ -50,7 +87,9 @@ class Tableau {
 
       int[] intArray = new int[] {42, 55, 99};
 
-      int[] intArrayAnonymous = {42, 55, 99, 100};
+      int[] intArrayAnonymous = {42, 55, 99, 35, 100, 55, 99, 35, 100};
+
+      Sort(intArrayAnonymous,0, intArrayAnonymous.length-1);
 
       //**************//
 
@@ -69,10 +108,11 @@ class Tableau {
       }
 
       /***** Ou encore *****/
-
+      /*
       for (int value : intArrayAnonymous) {
         System.out.println(value);
       }
+      */
 
   }
 }
