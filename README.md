@@ -1,3 +1,3 @@
-# IN205
+# IN205 Applications Portables
 
-Henrique RODRIGUES
+Henrique, ENSTA Paris
