@@ -29,10 +29,9 @@ class Tableau {
         point++;
       }
     }
-
     array = Sort(array, begin, pivot-1);
     array = Sort(array, pivot+1, end);  
-    
+
     return array;
   }
 
