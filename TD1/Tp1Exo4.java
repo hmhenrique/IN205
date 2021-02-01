@@ -19,6 +19,7 @@ class Tp1Exo4 {
         }
         return test;
     }
+    
     //####################################
 
     public static void main(String[] args) {

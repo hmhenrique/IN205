@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 
+
 class PlusMoins
 {
     public static int random;
