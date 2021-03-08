@@ -1,0 +1,5 @@
+dao/FilmDao.class
+ensta/utils/EstablishConnection.class
+ensta/utils/FillDatabase.class
+ensta/App.class
+model/Film.class
